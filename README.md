@@ -1,4 +1,4 @@
-# CS501FinalProject
+# Reco
 Clothing Rental app made using Android Studio
 
 ### Setup
