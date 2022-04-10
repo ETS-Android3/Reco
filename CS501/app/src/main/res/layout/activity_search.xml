@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:background="@color/bg_pink"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/market_bgimg"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/search_search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="15dp">
+
+                <EditText
+                    android:id="@+id/search_search_box"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_text_bg"
+                    android:layout_marginRight="5dp"
+                    android:hint="@string/search_hint"
+                    android:paddingLeft="15dp"/>
+
+                <ImageButton
+                    android:id="@+id/search_search_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@color/bg_pink"
+                    android:src="@drawable/search_btn"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/search_btnMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_map"
+                    android:textColor="@color/text_brown"
+                    android:background="?android:attr/selectableItemBackground"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CATEGORIES:"
+                android:textColor="@color/text_brown"
+                android:textStyle="bold"
+                android:layout_margin="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/search_department_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp">
+
+                <ImageButton
+                    android:id="@+id/search_btnMen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/men_icon"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <ImageButton
+                    android:id="@+id/search_btnWomen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/women_icon"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <ImageButton
+                    android:id="@+id/search_btnKids"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/baby_icon" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/type"
+                android:textColor="@color/text_brown"
+                android:textStyle="bold"
+                android:layout_margin="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/search_category_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/search_btn_jackets_coats"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/jacketCoat"
+                    android:textColor="@color/text_brown"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <Button
+                    android:id="@+id/search_btn_onepieces_dresses"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/dress"
+                    android:textColor="@color/text_brown"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <Button
+                    android:id="@+id/search_btn_shirts"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/shirt"
+                    android:textColor="@color/text_brown"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <Button
+                    android:id="@+id/search_btn_tops_tshirts"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/t_shirt"
+                    android:textColor="@color/text_brown"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <Button
+                    android:id="@+id/search_btn_hoodies_sweatshirts"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/hoodies"
+                    android:textColor="@color/text_brown"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <Button
+                    android:id="@+id/search_btn_jeans_pants"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/pants"
+                    android:textColor="@color/text_brown"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <Button
+                    android:id="@+id/search_btn_shoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/shoes"
+                    android:textColor="@color/text_brown"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <Button
+                    android:id="@+id/search_btn_bags"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/bags"
+                    android:textColor="@color/text_brown"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+                <Button
+                    android:id="@+id/search_btn_accessories"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Accessories"
+                    android:textColor="@color/text_brown"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@color/btn_pink"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <fragment
+        android:id="@+id/fragment_nagivation"
+        android:name="com.example.finalproject.NavigationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout="@layout/fragment_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

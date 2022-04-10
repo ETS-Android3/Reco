@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_pink"
+    tools:context=".OrdersActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_pink">
+
+        <ImageView
+            android:id="@+id/order_return"
+            android:layout_width="@dimen/return_icon"
+            android:layout_height="@dimen/return_icon"
+            android:layout_margin="@dimen/margin_5"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/return_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/ordersListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_pink"
+        android:divider="@color/bg_pink">
+
+    </ListView>
+
+    <fragment
+        android:id="@+id/fragment_nagivation"
+        android:name="com.example.finalproject.NavigationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        tools:layout="@layout/fragment_navigation" />
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_pink"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_return"
+        android:layout_width="@dimen/return_icon"
+        android:layout_height="@dimen/return_icon"
+        android:clickable="true"
+        android:layout_margin="@dimen/margin_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/return_icon" />
+
+
+    <LinearLayout
+        android:id="@+id/login_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintTop_toBottomOf="@id/login_return"
+        app:layout_constraintBottom_toTopOf="@id/login_edtEmail"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/login_bg"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btnLogin"
+        android:layout_width="108dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_txtErrorMsg" />
+
+    <EditText
+        android:id="@+id/login_edtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/login_txtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/login_title_layout" />
+
+    <EditText
+        android:id="@+id/login_edtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/login_txtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/login_edtEmail" />
+
+    <TextView
+        android:id="@+id/login_txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/login_email"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/login_edtEmail"
+        app:layout_constraintEnd_toStartOf="@+id/login_edtEmail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/login_txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_password"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/login_edtPassword"
+        app:layout_constraintEnd_toStartOf="@+id/login_edtPassword"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/login_txtErrorMsg"
+        android:layout_width="268dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_edtPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
