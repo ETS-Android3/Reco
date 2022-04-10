@@ -1,5 +1,5 @@
 # CS501FinalProject
-Clothing Rental APP
+Clothing Rental app made using Android Studio
 
 ### Setup
-In order to run the stripe api sccessfully, open CS501FinalProject/server in terminal. Use commend "npm install" to install the needed package for running backend server, after install successfully, use commend "node index.js" to run the server.
+In order to run the Stripe API successfully, open CS501FinalProject/server in terminal. Use the command "npm install" to install the necessary packages to run the backend server. After the packages have been installed successfully, use the command "node index.js" to run the server.
