@@ -18,3 +18,8 @@ Android Studio, Express, Firebase <br>
 APIs used: Google Maps, Stripe, Algolia
 
 ### Examples
+<p align="middle">
+  <img width="200" src="https://github.com/hanyjasmine/Reco/blob/main/snapshots/sc1.png"/>
+  <img width="200" src="https://github.com/hanyjasmine/Reco/blob/main/snapshots/sc2.png"/>
+  <img width="200" src="https://github.com/hanyjasmine/Reco/blob/main/snapshots/sc3.png"/>
+</p>
