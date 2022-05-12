@@ -3,7 +3,7 @@ Reco is an app that allows users to rent clothing and list their own outfits to 
 
 
 ### Setup
-In order to run the Stripe API successfully, open Reco/server in terminal. Use the follwoing command to install the necessary packages to run the backend server: 
+In order to run the Stripe API successfully, open Reco/server in terminal. Use the following command to install the necessary packages to run the backend server: 
 ```bash
 npm install
 ```
